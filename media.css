@@ -14,7 +14,6 @@
     }
 
     .first-item .text {
-
         word-spacing: 0.5rem;
         font-size: 1rem;
     }
@@ -26,27 +25,37 @@
     }
 
     /* <!-- //Second Section// --> */
+
     .second-container {
-        /* background-repeat: no-repeat;
-        background-size: calc(180vh); */
-        background-size:45rem;
 
-        /* background-position: 150px 60px; */
-
+        width: 90%;
+        /* height: 250vh; */
+        background: url(/images/v.png);
+        background-repeat: no-repeat;
+        background-size: 600px 750px;
+        background-position: 300px 50px;
+    
+    
     }
+ 
+    .second-left .left-img {
+        width: 100%;
+        
+    }
+ 
 
 
-}
-@media screen and (max-width:774px) {
-
-       /* <!-- //Second Section// --> */
-       .second-container {
-        /* background-repeat: no-repeat; */
-        /* background-size: calc(120vh); */
-        background-size:30rem;
-
-        /* background-position: 110px 90px; */
-        /* background-position: center center; */
+    .second-right{
+        width: 70%;
+     
+    
+    }
+    .second-col {
+        flex-basis:40%;
+        bottom: 40vh;
+        left: 16.5rem;
+    
+      
 
     }
 }
@@ -64,22 +73,50 @@
     .first-item .text {
 
         word-spacing: 0.2rem;
-        font-size: 0.6rem;
+        font-size: 0.5rem;
     }
 
     .first-item .btn {
-        padding: 0.5rem 2rem;
-        font-size: 0.8rem;
+        padding: 0.5rem 1rem;
+        font-size: 0.5rem;
 
     }
 
       /* <!-- //Second Section// --> */
       .second-container {
-            /* background-repeat: no-repeat; */
-            /* background-size: calc(120vh); */
-            background-size:15rem;
+
+        width: 80%;
+        /* height: 250vh; */
+        background: url(/images/v.png);
+        background-repeat: no-repeat;
+        background-size: 200px 550px;
+        background-position: 120px 50px; 
+    
+    
+    }
+    .second-left .left-img {
+        width: 100%;
+        /* height: 100vh; */
+        
+    }
+    
+    .second-right{
+        width: 80%;
+     
+    
+    }
+    .second-col {
+        flex-basis:100%;
+        bottom: 30vh;
+        left: 2rem;
+    
+      
 
     }
+ 
+      
+
+    
 
 }
 
