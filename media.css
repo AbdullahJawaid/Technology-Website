@@ -81,7 +81,43 @@
         .third-col .h1-primary{
             font-size: 1rem;
         }
+
+
+        /* <!-- //fifth-section// --> */
+        .fifth-row{
+
+            width: 90%;
+           
+        
+        }
+        .fifth-col .number .h1-primary{
+            /* padding: 0.5rem 1rem; */
+            width: 60%
+        }
+        .fifth-col .heading .h1-primary{
+            font-size: 1.5rem;
+            font-weight: 200;
+            padding: 1rem 0rem;
+        }
+        .fifth-col .paragraph .p-primary{
+            font-size: 1rem;
+            font-weight: 200;
+            font-style: italic;
+            padding: 1rem 0.5rem;
+            line-height: 25px;
+            letter-spacing: 1px;
+            
+        }
+        /* <!-- //six-section// --> */
+        .six-section{
+            display: none;
+        }
+
 }
+
+
+
+
 
 @media screen and (max-width:430px) {
     .nav-bar {
@@ -138,12 +174,16 @@
     .second-col .h3-primary{
         font-size: 1.2rem;
     }
+
+
+
     /* <!-- //Third  Section// --> */
+    
     .title-text .h1-primary{
         width: 100%;
     }
     .loader .h1-primary{
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
  
     .loader .h1-primary::after{
@@ -151,14 +191,53 @@
         height: 3vh;
     }
       
-
+    .third-row{
+        width: 90%;
+    }
 
     .third-col{
         flex-basis: 100%;
     }
+    .third-col .h1-primary{
+        font-size: 1.6rem;
+    }
     .third-round-img{
         width: 100%;
     }
+
+
+  /* <!-- //fifth-section// --> */
+
+  .fifth-section{
+    height: 400vh;
+   }
+   .fifth-row{
+    width: 90%;
+
+   }
+   .fifth-col{
+    height: 370px;
+    flex-basis: 100%;
+   }
+   .fifth-col .number .h1-primary{
+    padding: 0.5rem 1rem;
+    width: 33%;
+   }
+   .fifth-col .heading .h1-primary{
+    font-size: 2.6rem;
+    font-weight: 200;
+    padding: 1rem 0.5rem;
+}
+.fifth-col .paragraph .p-primary{
+    font-size: 1rem;
+    font-weight: 200;
+    font-style: italic;
+    padding: 1rem 0.5rem;
+    line-height: 30px;
+    letter-spacing: 1px;
+    
+}
+
 
 }
 
