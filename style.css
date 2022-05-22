@@ -21,16 +21,16 @@
 
 .nav-bar {
     width: 16%;
-    height: 100%;
+    height: 100vh;
     background-color: rgb(0, 0, 0);
-    position: fixed;
+    position:fixed;
     top: 0;
     right: -300px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     /* padding: 20rem; */
-    border-radius: 5% 0 0 5%;
+    border-radius: 0% 0 0 0%;
     transition: right .8s cubic-bezier(1, 0, 0, 1);
     z-index: 1;
 
@@ -218,7 +218,7 @@
 
 }
 .second-col {
-    flex-basis: 33.4%;
+    flex-basis: 40%;
     padding: 3rem 0.1rem;
     margin-bottom: 1.5rem;
     border-radius: 2px;
@@ -234,12 +234,9 @@
 .second-col .course-img img{
     width: 90px;    
     background-color: #232b79;
-    color: rgb(255, 255, 255);
     border-radius: 50px;
     padding: 1rem;
-   
-    
-    
+       
 }
 .second-col .h3-primary{
     font-size: 1.3rem;
@@ -249,19 +246,21 @@
     text-align: center;
 }
 
-/* <!-- //Third  Section// --> */
+                      /* <!-- //Third  Section// --> */
 .Third-container{
+    position: relative;
+    bottom: 30vh;
     width: 100%;
     padding-top:4rem;
 }
-.title-text{
+.third.title-text{
     text-align: center;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
    
 }
 
-.title-text .h1-primary{
-    width: 55%;
+.third.title-text .h1-primary{
+    width: 53%;
     position: relative;
     margin: auto;
     font-size: 2.5rem;
@@ -271,16 +270,13 @@
  
 }
 
-.loader .h1-primary{
+.third.loader .h1-primary{
     position: relative;
     letter-spacing: 5px; 
-    /* font-size: clamp(1rem, 3vw + 1rem, 4rem); */
-    /* font-size: 3.1rem; */
-    /* text-transform: capitalize; */
  }
 
-.loader .h1-primary::before,
-.loader .h1-primary::after{
+ .third.loader .h1-primary::before,
+ .third.loader .h1-primary::after{
     content: "";
     position: absolute;
     top: 0;
@@ -290,11 +286,11 @@
      
 
 } 
- .loader .h1-primary::before{
+.third.loader .h1-primary::before{
     background-color :white;
     animation: typewrite 4s steps(24) forwards;
 } 
-.loader .h1-primary::after{
+.third.loader .h1-primary::after{
     width: 0.2rem;
     height: 9vh;
     background-color: black;
@@ -357,9 +353,9 @@
 }
 
 
-/* <!-- //fourth-section// --> */
-.fourth-section{
+                        /* <!-- //fourth-section// --> */
 
+.fourth-section{
     width: 100%;
     height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(/images/swa-min.jpg) center no-repeat;
@@ -421,12 +417,11 @@
     
 }
 
-/* <!-- //six-section// --> */
+                                    /* <!-- //six-section// --> */
+
 .six-section {
     position: relative;
-    /* top: 100vh; */
     height: 90vh;
-    background-image: none;
     margin: -239px auto 0 calc(((100% - 1140px) / 2));
     width: 50%;
     background: #b8bef0;
@@ -443,8 +438,6 @@
     margin: auto;
     background-color: rgba(243, 241, 241, 0.977);
     color: rgb(0, 0, 0);
-    /* opacity: 1;
-    z-index: 1; */
 }
 
 .six-items .h1-primary {
@@ -459,14 +452,10 @@
     /* color: black; */
     font-size: 1.2rem;
     font-style: italic;
-    line-height: 30px;
-    letter-spacing: 3px;
+    line-height: 25px;
+    letter-spacing: 2px;
     font-weight: 100;
     margin-bottom: 2rem;
-  
-
-
-
 }
 
 .six-items .btn {
@@ -502,13 +491,13 @@
     /* background-color:rgba(243, 241, 241, 0.977); */
 
 }
-.title-text{
+.seven.title-text{
     text-align: center;
     padding-bottom: 2rem;
    
 }
 
-.title-text .h1-primary{
+.seven.title-text .h1-primary{
     width: 70%;
     position: relative;
     margin: auto;
@@ -519,17 +508,15 @@
  
 }
 
-.loader .h1-primary{
+.seven.loader .h1-primary{
     position: relative;
     letter-spacing: 5px; 
     margin-bottom: 4rem;
-    /* font-size: clamp(1rem, 3vw + 1rem, 4rem); */
-    /* font-size: 3.1rem; */
-    /* text-transform: capitalize; */
+    
  }
 
-.loader .h1-primary::before,
-.loader .h1-primary::after{
+ .seven.loader .h1-primary::before,
+ .seven.loader .h1-primary::after{
     content: "";
     position: absolute;
     top: 0;
@@ -539,11 +526,11 @@
      
 
 } 
- .loader .h1-primary::before{
+.seven.loader .h1-primary::before{
     background-color :rgba(255, 255, 255, 0.977);
     animation: typewrite 4s steps(24) forwards;
 } 
-.loader .h1-primary::after{
+.seven.loader .h1-primary::after{
     width: 0.2rem;
     height: 9vh;
     background-color: black;
