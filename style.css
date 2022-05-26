@@ -16,7 +16,22 @@
     width: 20%;
     /* background-color: black; */
     padding: 1rem 2rem;
+    animation: movedown 1s linear;
+    animation-delay: 1s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
 
+}
+@keyframes movedown {
+    0%{
+        transform: translateY(-100px);
+        visibility: visible;
+    }
+    100%{
+        transform: translateY(0);
+        visibility: visible;
+    }
+    
 }
 
 .nav-bar {
@@ -215,8 +230,25 @@
     align-items: flex-start;
     text-align: center;
     justify-content: space-evenly;
+    animation: moveup 1s linear;
+    animation-delay: 2.5s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
 
 }
+@keyframes moveup {
+    0%{
+        transform: translateY(-100px);
+        visibility: visible;
+    }
+    100%{
+        transform: translateY(0);
+        visibility: visible;
+    }
+    
+    }
+
+
 .second-col {
     flex-basis: 40%;
     padding: 3rem 0.1rem;
@@ -251,8 +283,10 @@
     position: relative;
     bottom: 30vh;
     width: 100%;
-    padding-top:4rem;
+  
+ 
 }
+
 .third.title-text{
     text-align: center;
     padding-bottom: 1rem;
@@ -311,8 +345,23 @@
     justify-content: space-evenly;
     align-items: flex-start;
     flex-wrap: wrap;
+    animation: moveside 1s linear;
+    animation-delay: 3.5s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
 
 }
+@keyframes moveside {
+    0%{
+        transform: translateX(-100px);
+        visibility: visible;
+    }
+    100%{
+        transform: translateX(0);
+        visibility: visible;
+    }
+    
+    }
 .third-col{
     flex-basis: 30%;
     height: 300px;
@@ -343,6 +392,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    animation: moveside 1s linear;
+    animation-delay: 3.5s;
+    visibility: hidden;
+    animation-fill-mode:forwards;
+    
     
 }
 .third-round-img{
@@ -381,6 +435,22 @@
     flex-wrap: wrap;
     position: relative;
     bottom: 30vh;
+    animation: movedown 1s linear;
+    animation-delay: 4.5s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+
+  }
+
+@keyframes movedown {
+0%{
+    transform: translateY(-100px);
+    visibility: visible;
+}
+100%{
+    transform: translateY(0);
+    visibility: visible;
+}
 
 }
 .fifth-col{
@@ -425,6 +495,7 @@
     margin: -100px auto 0 calc(((100% - 1140px) / 2));
     width: 50%;
     background: #b8bef0;
+    
     
 }
 
@@ -477,7 +548,7 @@
     width:65vw;
     height: 100vh;
     position: absolute;
-    top: 45vh;
+    top: 60vh;
     right: 10rem;
 }
 
@@ -485,9 +556,8 @@
 
 .seven-section{
     width: 100%;
-    padding: 23rem 0;
-    /* background-color:rgba(243, 241, 241, 0.977); */
-
+    padding: 30rem 0;
+   
 }
 .seven.title-text{
     text-align: center;
@@ -565,14 +635,15 @@
 }
 
 
-/* <!-- //seven-section// --> */
+/* <!-- //eight-section// --> */
 
 .eight-section{
-
     width: 100%;
-    
+    position: relative;
+    bottom: 30vh;
 
 }
+
 .eight-right-items{
     /* width: 50%; */
     display: flex;
@@ -580,9 +651,9 @@
     justify-content:center;
     
 }
-/* .title-text.loader.eight{
+.title-text.loader.eight{
     margin-bottom: 20rem;
-} */
+}
 .eight-section .title-text{
     margin-bottom: 7rem;
 }
@@ -590,11 +661,11 @@
 .back-groung-color{
     flex-basis: 30%;
     background-color: #232b79;
-    height: 100vh;
-    width: 10px;
+    height: 120vh;
+
 }
 .right-img img{
-    width: 50vw;
+    width: 40vw;
 }
 .right-img{
     position: relative;
@@ -603,6 +674,56 @@
    
 
 }
+
+.eight-left-item{
+    flex-basis: 50%;
+    width: 100%;
+    position: relative;
+    bottom: 40vw;
+   right: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.swiper{
+    width: 40%;
+    height: 60vh;
+    background-color: white;
+    border: 1px solid rgb(221, 218, 218);
+}
+.swiper-slide{
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    
+}
+.swiper-slide .h1-primary{
+    font-size: 2rem;
+    font-weight: 100;
+    margin-bottom: 1.5rem;
+    padding:0  5rem;   
+  
+}
+.swiper-slide .p-primary{
+    font-size: 1rem;
+    font-weight: 100;
+    margin-bottom: 2rem;
+    padding:  0 5rem; 
+    line-height: 25px;
+  
+}
+
+
+.swiper .swiper-button-prev, .swiper .swiper-button-next{
+    color: #232b79;
+}
+.swiper .swiper-pagination-bullet-active{
+    background: gray;
+
+
+} 
 
 /* <!-- //footer-section// --> */
 

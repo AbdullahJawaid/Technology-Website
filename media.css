@@ -136,7 +136,31 @@
             width: 0.2rem;
             height: 10vh;
             
-         }     
+         }  
+         
+         /* <!-- //eight-section// --> */
+         .back-groung-color{
+            flex-basis: 50%;
+            
+        }
+    
+        .right-img img{
+            width: 50vw;
+            position: relative;
+            top: 20vh;
+            right: 2rem;
+        }
+         .eight-left-item{
+             flex-basis: 100%;
+            position: relative;
+            bottom: 0;
+           right: 0;
+         }
+         .swiper{
+            width: 60%;
+            height: 80vh;
+        }
+
 
          /* <!-- //footer-section// --> */
          .footer{
@@ -153,8 +177,8 @@
              position: relative;
          }
 
-         
-
+    
+       
                         
 
 }
@@ -299,15 +323,21 @@
 
 
     /* <!-- //Third  Section// --> */
+    .Third-container{
+        position: relative;
+        top:5vh;
+        width: 100%;
+    }
 
     .third.title-text .h1-primary{
+       
         width: 100%;
         
     }
     
     .third.loader .h1-primary{
         width: 100%;
-        font-size: 0.9rem;
+        font-size: 1.5rem;
         letter-spacing: 3px;
         font-weight: 600;
     }
@@ -315,7 +345,7 @@
     .third.loader .h1-primary::after{
         
         width: 0.5vw;
-        height: 4vh;
+        height: 7vh;
     }
       
     .third-row{
@@ -411,6 +441,7 @@
         width: 100%;
         font-size: 1.5rem;
         letter-spacing: 0.5px;
+        font-weight: 700;
 
     }
     .seven.loader .h1-primary::after{
@@ -430,6 +461,31 @@
         line-height: 30px;
     
     }
+
+     /* <!-- //eight-section// --> */
+     .back-groung-color{
+        flex-basis: 70%;
+        
+    }
+
+    .right-img img{
+        width: 60vw;
+        position: relative;
+        top: 20vh;
+        right: 1rem;
+    }
+     .eight-left-item{
+         flex-basis: 100%;
+        position: relative;
+        bottom: 0;
+       right: 0;
+     }
+
+     .swiper{
+        width: 90%;
+        height: 80vh;
+    }
+
         /* <!-- //footer-section// --> */
 
     .footer-items{
@@ -463,6 +519,20 @@
 
 @media screen and (max-width:390px) {
 
+     /* <!-- //third-section// --> */
+
+    .third.loader .h1-primary{
+        width: 100%;
+        font-size: 1rem;
+        letter-spacing: 3px;
+        font-weight: 600;
+    }
+ 
+    .third.loader .h1-primary::after{
+        
+        width: 0.5vw;
+        height: 5vh;
+    }
 
 
                     /* <!-- //six-section// --> */
@@ -486,6 +556,47 @@
     width: 0.1rem;
     height: 5vh;
     } 
+
+
+     /* <!-- //eight-section// --> */
+     .back-groung-color{
+        flex-basis: 80%;
+        
+    }
+
+    .right-img img{
+        width: 79vw;
+        position: relative;
+        top: 20vh;
+        right: 1.9rem;
+    }
+     .eight-left-item{
+        flex-basis: 100%;
+        position: relative;
+        top: -30vh;
+       
+     }
+
+     .swiper{
+        width: 90%;
+        height: 90vh;
+    }    
+    .swiper-slide .h1-primary{
+        font-size: 1.6rem;
+        font-weight:500;
+        margin-bottom: 1.5rem;
+        padding:0  3rem;   
+      
+    }
+    .swiper-slide .p-primary{
+        font-size: 0.6rem;
+        font-weight: 100;
+        margin-bottom: 2rem;
+        padding:0  3rem;  
+        line-height: 25px;
+      
+    }
+    
 }
 
   
